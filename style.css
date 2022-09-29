@@ -94,6 +94,12 @@ main {
 
 /* Configuração para quando a tela do usuário for menor que 805 pixels*/
 @media (max-width: 805px) {
+    body {
+        width: 805px;
+        height: 462px;
+        margin: 0;
+        padding: 0;
+    }
     #nome {
         font-size: 20px;
     }
