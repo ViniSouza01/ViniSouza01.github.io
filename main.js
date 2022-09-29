@@ -36,4 +36,4 @@ function efeitoMatrix(neo) {
         nav.classList.toggle('active');
     }
 
-    btnMobile.addEventlistener('click', toggleMenu);
+    btnMobile.addEventListener('click', toggleMenu());

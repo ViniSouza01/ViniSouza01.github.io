@@ -64,7 +64,7 @@ main {
 #h1{
     position: fixed;
     color: #26DF10;
-    left: 26%;
+    left: 31%;
     bottom: 30%;
 }
 
@@ -95,7 +95,7 @@ main {
 /* Configuração para quando a tela do usuário for menor que 805 pixels*/
 @media (max-width: 805px) {
     #nome {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     header{
@@ -106,39 +106,40 @@ main {
         display: block; /*Para o botão hamburguer aparecer*/
         position: absolute;
         left: 80%;
-        top: 30%;
-        font-size: 25px;
-        display: flex;
-    }
-
-    #cubo {
-        width: 150px;
-        height: 150px;
-        top: 30%;
-    }
-
-    #h1 {
+        top: 25%;
         font-size: 20px;
-        left: %;
-    }
-
-    #button {
-        font-size: 20px;
-        left: 46%;
-    }
-
-    #imagens {
-        top: ;
+        background: none;
+        border: none;
     }
     
     #menu {
-        display: flex;
-        flex-direction: column;
-        top: 100%;
-        position: relative;
         background-color: #0dbf10;
+        top: 30%;
     }
 
-    #menu li{
+    #cubo {
+        width: 100px;
+        height: 100px;
+        top: 30%;
+        position: fixed;
+        left: 35%;
+    }
+
+    #h1 {
+        font-size: 17px;
+        left: 15%;
+    }
+
+    #button {
+        font-size: 15px;
+        left: 40%;
+    }
+
+    #zap, #insta, #git {
+        left: 20%;
+    }
+
+    #btnMobile {
+        
     }
 }
