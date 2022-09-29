@@ -93,19 +93,20 @@ main {
 
 
 /* Configuração para quando a tela do usuário for menor que 805 pixels*/
-@media (max-width: 805px) {
+@media (max-width: 300px) {
     body {
-        width: 805px;
+        width: 300px;
         height: 462px;
         margin: 0;
         padding: 0;
     }
     #nome {
-        font-size: 20px;
+        font-size: 10px;
     }
 
     header{
         height: 70px;
+        display: flex;
     }
 
     #btnMobile {
@@ -121,6 +122,12 @@ main {
     #menu {
         background-color: #0dbf10;
         top: 30%;
+        padding: 2px;
+    }
+
+    #menu li{
+        font-size: 10px;
+        padding: 2px;
     }
 
     #cubo {
@@ -133,7 +140,7 @@ main {
 
     #h1 {
         font-size: 17px;
-        left: 15%;
+        left: %5;
     }
 
     #button {
@@ -142,7 +149,7 @@ main {
     }
 
     #zap, #insta, #git {
-        left: 20%;
+        left: 10%;
     }
 
     #btnMobile {
