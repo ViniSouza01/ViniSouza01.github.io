@@ -28,12 +28,3 @@ function efeitoMatrix(neo) {
         var canvas = document.getElementById('canvas');
         efeitoMatrix(canvas);
     }
-    //Configuração quando o usuário apertar o botão
-    const btnMobile = document.getElementById('btnMobile');
-
-    function toggleMenu() {
-        const nav = document.getElementById('nav');
-        nav.classList.toggle('active');
-    }
-
-    btnMobile.addEventListener('click', toggleMenu());
