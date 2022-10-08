@@ -48,11 +48,11 @@ header h1{
 }
 #hamburguer {
     display: block;
-     width: 20px;
-     border-top: 2px solid black;
-     align-items: center;
-     margin-right: 2vw;
-     transition: .5s;
+    width: 20px;
+    border-top: 2px solid black;
+    margin-right: 2vw;
+    transition: .5s;
+    justify-content: center;
 }
 
 #hamburguer:hover{
@@ -60,7 +60,8 @@ header h1{
 }
 
 label {
-    margin-top: 7vh;
+    display: flex;
+    align-items: center;
 }
 
 #checkbox:checked ~ #menu {
