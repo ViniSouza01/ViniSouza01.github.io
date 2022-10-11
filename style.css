@@ -80,6 +80,7 @@ border-top-color: transparent;
     transform: rotate(-135deg);
     margin-bottom: -10px;
 }
+
 #menu {
     list-style: none;
     display: flex;
@@ -151,7 +152,6 @@ main {
 
 .imagens {
     position: absolute;
-    /* background-color: #ded5d5; */
     width: 100vw;
     top: 85vh;
     display: flex;
@@ -166,3 +166,70 @@ main {
 }
 
 /* Configuração para quando a tela do usuário for menor que 805 pixels*/
+@media (max-width: 300px) {
+
+    body {
+        width: 80vw;
+        height: 50vh;
+    }
+
+    #hamburguer {
+        width: 30px;
+        border-top: 2px solid black;
+        margin-right: 15px;
+    }
+
+    #hamburguer::after, #hamburguer::before {
+        height: 2px;
+    }
+
+    #menu {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: -32vh;
+        background-color: rgba(213, 213, 213, .1);
+        line-height: 5vh;
+        transition: .5s;
+    }
+    
+    #menu li {
+        color: #26DF10;
+        font-size: 13px;
+        padding: 10px;
+        border-bottom: 2px solid #ded5d5;
+        margin-right: 5px;
+        
+    }
+
+    #nome {
+        font-size: 20px;
+    }
+
+    #cubo {
+        width: 90px;
+        height: 90px;
+        position: relative;
+    }
+
+    #div-cubo {
+        top: 25vh;
+    }
+
+    #h1-habilidades {
+        font-size: 10px;
+        top: 50vh;
+    }
+
+    #h1-contatos {
+        font-size: 15px;
+        top: 60vh;
+    }
+
+    #zap, #git, #insta {
+        width: 30px;
+        margin-left: 20px;
+    }
+}
