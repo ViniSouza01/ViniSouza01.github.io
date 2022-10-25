@@ -3,7 +3,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 canvas {
@@ -21,89 +20,31 @@ header {
     width: 100%;
     height: 80px;
     background-color: #26DF10;
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: space-between;
 }
 
-header h1{
-    padding: 1rem;
-}
-#div {
-    display: flex;
-}
-
-#checkbox {
+#btnMobile {
+    position: absolute;
     display: none;
 }
-
-#hamburguer::after, #hamburguer::before {
-    content: '';
-    display: block;
-    width: 30px;
-    height: 4px;
-    margin-top: 7px;
-    background-color: black;
-    transition: .5s;
-}
-#hamburguer {
-    display: block;
-    width: 30px;
-    border-top: 4px solid black;
-    margin-right: 2vw;
-    transition: .5s;
-    justify-content: center;
-}
-
-#hamburguer:hover{
-    cursor: pointer;
-}
-
-label {
-    display: flex;
-    align-items: center;
-}
-
-#checkbox:checked ~ #menu {
-    right: 0;
-}
-#checkbox:checked ~ label #hamburguer{
-border-top-color: transparent;
-}
-
-#checkbox:checked ~ label #hamburguer::after {
-    transform: rotate(135deg);
-
-}
-
-#checkbox:checked ~ label #hamburguer::before {
-    transform: rotate(-135deg);
-    margin-bottom: -10px;
+header h1{
+    padding: 1rem;
 }
 
 #menu {
     list-style: none;
+    padding: 1rem;
     display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 80px;
-    right: -32vh;
-    background-color: rgba(213, 213, 213, .1);
-    line-height: 10vh;
-    transition: .5s;
+    flex-direction: row;
+    gap: 2rem;
 }
 
-#menu li {
-    color: #26DF10;
-    font-size: x-large;
-    padding: 10px;
-    border-bottom: 2px solid #ded5d5;
-    margin-right: 5px;
-}
-
-#menu li a {
+#menu a{
     text-decoration: none;
-    color: #26DF10;
+    color: black;
+    font-size: 30px;
 }
 
 main {
@@ -113,123 +54,140 @@ main {
 
 #cubo {
     position: fixed;
-    width: 150px;
-    height: 150px;
-    border-radius: 120px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    top: 30%;
+    left: 43%;
 }
 
-#div-cubo {
-    width: 100vw;
-    height: 20vh;
-    position: absolute;
-    top: 35vh;
-    display: flex;
-    justify-content: center;
-}
-
-#h1-habilidades{
-    position: relative;
+#h1{
+    position: fixed;
     color: #26DF10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 65vh;
-    font-size: 15px;
-    flex-wrap: wrap;
+    left: 28vw;
+    bottom: 30%;
 }
 
-#h1-contatos{ 
-    position: relative;
-    color: #26DF10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 70vh;
-    font-size: 15px;
-    flex-wrap: wrap;
-    font-size: 23px;
+#button {
+    position: fixed;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 15px;
+    left:45%;
+    top: 75%;
+    color: green;
+    border: none;
 }
 
 .imagens {
     position: absolute;
-    width: 100vw;
-    top: 85vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
+    top: 90%;
+    left: 40.5%;
+    justify-content: space-between;
 }
 
-#zap, #git, #insta {
-    width: 60px;
+#git, #zap, #insta {
+    width: 5%;
     margin-left: 30px;
 }
 
+
 /* Configuração para quando a tela do usuário for menor que 805 pixels*/
-@media (max-width: 300px) {
-
+@media (max-width: 600px) {
     body {
-        width: 80vw;
-        height: 50vh;
+        width: 300px;
+        height: 462px;
+        margin: 0;
+        padding: 0;
     }
-
-    #hamburguer {
-        width: 30px;
-        border-top: 2px solid black;
-        margin-right: 15px;
-    }
-
-    #hamburguer::after, #hamburguer::before {
-        height: 2px;
-    }
-
-    #menu {
-        list-style: none;
+    header {
+        width: 100vw;
+        height: 20%;
         display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 80px;
-        right: -32vh;
-        background-color: rgba(213, 213, 213, .1);
-        line-height: 5vh;
-        transition: .5s;
+        align-items: center;
+        flex-direction: row;
+    }
+    #nome {
+        font-size: 18px;
+    }
+
+    #btnMobile {
+        display: block; /*Para o botão hamburguer aparecer*/
+        left: 77vw;
+        font-size: 17px;
+        background: none;
+        border: none;
+    }
+    #btnMobile::after, #btnMobile::before {
+    margin-top: 6px;
+    content: '';
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: currentColor; 
+    transition: .6s;
+    position: relative;
     }
     
-    #menu li {
-        color: #26DF10;
-        font-size: 13px;
-        padding: 10px;
-        border-bottom: 2px solid #ded5d5;
-        margin-right: 5px;
-        
+    #menu {
+        background-color: #0dbf10;
+        top: 30%;
+        padding: 2px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 35.6vw;
+        height: 20vh;
+        width: 19vw;
     }
 
-    #nome {
-        font-size: 20px;
+    #menu li{
+        font-size: 11px;
+        padding: 2px;
+        font-weight: bold;
     }
 
     #cubo {
-        width: 90px;
-        height: 90px;
-        position: relative;
+        width: 100px;
+        height: 100px;
+        top: 30%;
+        position: fixed;
+        left: 35%;
     }
 
-    #div-cubo {
-        top: 25vh;
+    #h1 {
+        font-size: 18px;
+        left: 5%;
+        bottom: 40vh;
+        left: 15vw;
     }
 
-    #h1-habilidades {
-        font-size: 10px;
-        top: 50vh;
-    }
-
-    #h1-contatos {
+    #button {
         font-size: 15px;
-        top: 60vh;
+        left: 38%;
+        top: 67vh;
     }
 
-    #zap, #git, #insta {
-        width: 30px;
-        margin-left: 20px;
+    #git, #insta, #zap   {
+        left: 37vw;
+        width: 8vw;
+        position: fixed;
+        justify-content: space-between;
+        display: flex;
+        flex: row;
+    }
+    #zap {
+        margin-left: 75px;
+    }
+    #insta {
+        margin-left: 30px;
+    }
+    #git {
+        margin-left: -15px;
+    }
+    .ibagens {
+        justify-content: space-around;
+        display: flex;
+        flex: row;
     }
 }
