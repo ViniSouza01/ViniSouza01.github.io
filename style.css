@@ -28,3 +28,9 @@ main p {
     font-size: 20px;
 }
 
+button {
+    padding: 5px;
+    background-color: pink;
+    font-family: 'Lobster';
+    font-size: 20px;
+}
