@@ -13,8 +13,4 @@ senha = 'Leticia Ferreira Matias';
             alert('Acesso negado');
             top.location.href='erro,html'
             exit;
-<<<<<<< HEAD
         }
-=======
-        }
->>>>>>> 09570b90a189fa6e171fa78f58a8cc83e6015a4d
