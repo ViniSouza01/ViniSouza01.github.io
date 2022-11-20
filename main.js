@@ -1,4 +1,4 @@
-/*senha = 'Leticia Ferreira Matias';
+senha = 'Leticia Ferreira Matias';
         senha2 = 'Vinicius Vieira de Souza';
         senhadig = prompt("Digite seu nome inteiro (primeira letra maiúscula)","")
         if (senhadig != senha2 && senhadig != senha){
@@ -13,4 +13,4 @@
             alert('Acesso negado');
             top.location.href='erro,html'
             exit;
-        }*/
+        }

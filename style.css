@@ -25,5 +25,12 @@ main {
 
 main p {
     margin: 15px;
+    font-size: 20px;
 }
 
+button {
+    padding: 5px;
+    background-color: pink;
+    font-family: 'Lobster';
+    font-size: 20px;
+}
