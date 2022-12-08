@@ -68,19 +68,24 @@
 }
 
 body {
+<<<<<<< HEAD
     margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
+=======
+    margin: 10px;
+    background-image: url("./assets/background.png");
+>>>>>>> 811a83c127fa0d1ad3737372656c12c020f767ed
 }
 
 main {
-    gap: 4.5rem;
     display: flex;
     opacity: 1;
     flex-direction: column;
     align-items: center;
+<<<<<<< HEAD
     height: 100%;
     position: absolute;
     animation: final 10s;
@@ -88,12 +93,25 @@ main {
     -moz-animation-fill-mode: both;
     animation-fill-mode: both;
     z-index: 0;
+=======
+    gap: 3rem;
+}
+
+h1 {
+    color: white;
+    font-family: 'Roboto';
+}
+
+.img > a > img {
+    width: 100px;
+>>>>>>> 811a83c127fa0d1ad3737372656c12c020f767ed
 }
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+<<<<<<< HEAD
     justify-content: center;
     width: 100%;
     height: 100%;
@@ -103,21 +121,35 @@ main {
 #name {
     font-family: 'Roboto';
     font-size: 35px;
+=======
+>>>>>>> 811a83c127fa0d1ad3737372656c12c020f767ed
 }
 
 .img {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2rem;
 }
+<<<<<<< HEAD
 #main-img {
     width: 200px;
+=======
+
+button {
+    width: 150px;
+    padding: 15px;
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: grey;
+>>>>>>> 811a83c127fa0d1ad3737372656c12c020f767ed
 }
 
-.img > a > img {
-    width: 80px;
+button:hover {
+    cursor: pointer;
+    background-color: white;
 }
 
+<<<<<<< HEAD
 button {
     border-radius: 10px;
     background-color: darkgrey;
@@ -125,4 +157,67 @@ button {
     font-size: 30px;
     padding: 10px;
     box-shadow: 4px 4px 2px 1px;
+=======
+
+
+@media (max-width: 400px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: none;
+    }
+
+    main {
+        gap: 4.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        gap: 1rem;
+    }
+
+    h1 {
+        font-family: 'Roboto';
+        font-size: 30px;
+    }
+
+    .img {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    #main-img {
+        width: 80vw;
+    }
+
+    .img > a > img {
+        width: 80px;
+    }
+
+    button {
+        border-radius: 10px;
+        background-color: darkgrey;
+        width: 150px;
+        font-size: 20px;
+        padding: 10px;
+        box-shadow: 4px 4px 2px 1px;
+    }
+>>>>>>> 811a83c127fa0d1ad3737372656c12c020f767ed
 }
